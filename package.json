@@ -1,0 +1,23 @@
+{
+  "name": "symencdec",
+  "version": "1.0.6",
+  "description": "Symmetric encryption/decryption for NodeJS, based on LINE Travel PHP based implementation",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepublish": "npm test && npm version patch",
+    "postpublish": "git push",
+    "pretest": "npm run build",
+    "test": "jest",
+    "test-no-build": "jest"
+  },
+  "keywords": ["nodejs", "php", "crypto", "linetravel", "splittytravel"],
+  "author": "Nir Elbaz <nire0510@gmail.com> (https://nirelbaz.com)",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^14.0.6",
+    "eslint-config-splitty": "^1.0.2",
+    "jest": "^26.0.1"
+  }
+}
